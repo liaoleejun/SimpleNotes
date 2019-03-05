@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Shadowsocks 列传</title>
+
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleAutoTOC.css">
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleBorderText.css">
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleCiteList.css">
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleDescList.css">
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleParagraphIndent.css">
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleTooltip.css">
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleWritingSystem.css">
+
+    <!-- jQuery必须是第一个js-->
+    <script type="application/javascript" src="../SimpleWritingSystem/script/jquery-3.3.1.js"></script>
+
+    <!-- SimpleWritingSystem.js必须在SimpleTooltip.js之前 -->
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleWritingSystem.js"></script>
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleTooltip.js"></script>
+
+    <!-- SimpleCiteList.js, SimpleDescList.js必须在SimpleAutoNOH.js, SimpleAutoTOC.js之前 -->
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleCiteList.js"></script>
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleDescList.js"></script>
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleAutoNOH.js"></script>
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleAutoTOC.js"></script>
+
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleParagraphIndent.js"></script>
+
+    <!-- Source code highlight -->
+    <link rel="stylesheet" href="../SimpleWritingSystem/SimpleUseHighlightJS-offline/highlight/styles/default.css" />
+    <script src="../SimpleWritingSystem/SimpleUseHighlightJS-offline/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- Math formula -->
+    <script type="application/javascript" src="../SimpleWritingSystem/SimpleUseMathJax-offline/MathJax/MathJax.js?config=TeX-AMS_HTML-full"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+        });
+    </script>
+</head>
+
+<body>
+    <div class="timestamp">
+        <code>Created at: 2019-03-02</code><br>
+        <code>Updated at: 2019-03-02</code>
+    </div>
+
+    <h1>Shadowsocks 列传</h1>
+<pre class="preface">一个 SOCKS5 proxy。
+一个旁观者的记录，带着敬意。
+— 题记
+</pre>
+
+    <h2>摘要</h2>
+    <p>摘要应该最后写。作为一个目前在大陆依然坚挺的翻墙方式 - Shadowsocks。</p>
+    <p><b>关键词</b>: 小虾, Python SOCKS5 Server; clowwindy, Shadowsocks; Jigsaw, Outline</p>
+
+    <h2>小虾</h2>
+    <p>2011年03月29日，网名为小虾的在校大学生，在他的个人网站上贴出了题为"用Python写socks5服务器端"的博客<span data-ct="xiaoxia-socks5-pyton"></span>。这篇博客是后面Shadowsocks的初始作者clowwindy的参考来源，clowwindy在问答网站的评论交流中有承认说是根据小虾的博客改的<span data-ct="clowwindy-v2ex-shadowsocks"></span>，同时在小虾的博客的评论中也有网友指出在分析clowwindy的shadowsocks源码时发现很像<span data-ct="xiaoxia-socks5-pyton"></span>。</p>
+    <p>值得指出的，根据小虾在自己的博客的评论区透露的消息，推知他是华南理工大学的大三在读学生，主修计算机科学与技术：华工计算机09双语联合班。<span data-ct="xiaoxia-infer"></span></p>
+
+    <h2>clowwindy</h2>
+    <p>2012年04月20日，网名为clowwindy的网友，在论坛V2EX上贴出题为"发一个自用了一年多的翻墙工具 shadowsocks"的帖子<span data-ct="clowwindy-v2ex-shadowsocks"></span>。当时，时间是快晚上11点半。接下来的几个月，该帖子下讨论十分积极，clowwindy积极、热情地和网友进一步讨论，Shadowsocks的前期发展我想应该离不开clowwindy的热情。clowwindy的个人信息，我暂未去了解，网上的资料似乎也是很少。</p>
+    <p>2015年8月20日，作者clowwindy被官方带走去喝茶<span data-ct="clowwindy-tea"></span>，人没事，迫于压力删除了Ta在GitHub上的很多内容。</p>
+
+    <h2>众人拾柴</h2>
+    <p>从2012年的4月开始一直到现在，不知有多少天下英雄加入或关注Shadowsocks，贡献自己的智慧。我是2017年下半年才接触到Shadowsocks的，自然是没办法参与到这场改变中国互联网的项目中。众人拾柴，请移步<span data-dt="shadowsocks-github">Shadowsocks的GitHub页面</span>，还有，通过搜索引擎搜索更多的信息。</p>
+    <p>出现了组织 <a href="https://www.shadowsocks.org">www.shadowsocks.org</a>，这个站点有详细的Shadowsocks的客户端和服务端下载，我也是在这个站点了解到Jigsaw。下面叙述Jigsaw。</p>
+
+    <h2>Jigsaw</h2>
+    <p>正规军入场 — Google。</p>
+    <p>2018年3月20日<span data-ct="jigsaw-wikipedia"></span>，Alphabet (Google母公司)的子公司Jigsaw发布了Outline VPN，它是基于Shadowsocks的VPN，注意它确实是一个VPN，因为安装后电脑的所有流量都走这个VPN，但是注意不支持ping即使用后不能ping任何服务器。</p>
+    <p>欲了解更多Jigsaw，请查看它的 <a href="https://www.getoutline.org/en/home">官网</a>，<a href="https://en.wikipedia.org/wiki/Outline_VPN">Wikipedia</a>，<a href="https://medium.com/jigsaw">Medium</a>，以及
+        <a href="https://github.com/Jigsaw-Code">GitHub</a>，当然也要记得用搜索引擎搜索！</p>
+
+    <!-- List of Cites -->
+    <div class="cite-list" style="display: none;">
+        <span id="xiaoxia-socks5-pyton">小虾. (2011, March 29). "<a href="http://xiaoxia.org/2011/03/29/written-by-python-socks5-server/">用Python写socks5服务器端</a>". Accessed on 2019-03-02. Archived at <a href="https://web.archive.org/web/20190302092526/http://xiaoxia.org/2011/03/29/written-by-python-socks5-server/">Internet Archive</a>.</span>
+
+        <span id="xiaoxia-infer">小虾. (2011, September). "<a href="http://xiaoxia.org/curriculum-schedule/">课程表</a>". Accessed on 2019-03-02. Archived at <a href="https://web.archive.org/web/20190302091435/http://xiaoxia.org/curriculum-schedule/">Internet Archive</a>.</span>
+
+        <span id="clowwindy-v2ex-shadowsocks">clowwindy. (2012, April 20). "<a href="https://www.v2ex.com/t/32777">发一个自用了一年多的翻墙工具 shadowsocks</a>". <span style="color: red">(当前已无法正常访问，请查看互联网档案馆即Internet Archive)</span>. Archived at <a href="https://web.archive.org/web/20141015132412/https://www.v2ex.com/t/32777?p=1">Internet Archive Part 1</a> and <a href="https://web.archive.org/web/20141121215751/https://www.v2ex.com/t/32777">Internet Archive Part 2</a>.</span>
+
+        <span id="jigsaw-wikipedia">Wikipedia. "<a href="https://en.wikipedia.org/wiki/Outline_VPN">Outline VPN</a>". Accessed on 2019-03-02.</span>
+
+        <span id="clowwindy-tea">GitHub. Archived at <a href="https://web.archive.org/web/20150822223925/https://github.com/shadowsocks/shadowsocks-iOS/issues/124">Internet Archive</a>.</span>
+    </div>
+
+    <!-- List of Descriptions -->
+    <div class="desc-list" style="display: none;">
+        <div id="shadowsocks-github"><a href="https://github.com/shadowsocks/shadowsocks">https://github.com/shadowsocks/shadowsocks</a>（注：虽然默认进入rm分支，显示 "Removed according to regulations."，但是切换为master分支还是可以查看的！）</div>
+    </div>
+</body>
+</html>

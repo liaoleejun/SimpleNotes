@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>BitTorrent</title>
+
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleAutoTOC.css">
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleBorderText.css">
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleCiteList.css">
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleDescList.css">
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleParagraphIndent.css">
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleTooltip.css">
+    <link rel="stylesheet" href="../SimpleWritingSystem/style/SimpleCombine.css">
+
+    <!-- jQuery必须是第一个js-->
+    <script type="application/javascript" src="../SimpleWritingSystem/script/jquery-3.3.1.js"></script>
+
+    <!-- SimpleWritingSystem.js必须在SimpleTooltip.js之前 -->
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleCombine.js"></script>
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleTooltip.js"></script>
+
+    <!-- SimpleCiteList.js, SimpleDescList.js必须在SimpleAutoNOH.js, SimpleAutoTOC.js之前 -->
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleCiteList.js"></script>
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleDescList.js"></script>
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleAutoNOH.js"></script>
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleAutoTOC.js"></script>
+
+    <script type="application/javascript" src="../SimpleWritingSystem/script/SimpleParagraphIndent.js"></script>
+
+    <!-- Source code highlight -->
+    <link rel="stylesheet" href="../SimpleWritingSystem/SimpleUseHighlightJS-offline/highlight/styles/default.css" />
+    <script src="../SimpleWritingSystem/SimpleUseHighlightJS-offline/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- Math formula -->
+    <script type="application/javascript" src="../SimpleWritingSystem/SimpleUseMathJax-offline/MathJax/MathJax.js?config=TeX-AMS_HTML-full"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+        });
+    </script>
+</head>
+
+<body>
+    <div class="timestamp">
+        <code>Created at: 2019-01-31</code><br>
+        <code>Updated at: 2019-01-31</code>
+    </div>
+
+    <h1>BitTorrent</h1>
+    <pre class="preface">点对点文件上传/下载。
+— 题记
+    </pre>
+
+    <h2>摘要</h2>
+    <p>摘要应该最后写。Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum, eaque eius eum excepturi incidunt iste itaque magni mollitia neque nihil non placeat praesentium provident quisquam sit ut vitae. Ad commodi consequatur, culpa cumque dolorum enim error ex hic illo inventore necessitatibus nihil omnis, praesentium quasi repudiandae saepe sapiente suscipit voluptatibus. Autem consequatur ea enim eveniet explicabo id quod quos! Amet animi architecto asperiores consequuntur culpa delectus dicta dignissimos dolor dolores dolorum eius enim exercitationem expedita id illo illum iure labore laborum, laudantium magnam minima modi molestias necessitatibus neque obcaecati officia optio quaerat quisquam quod repellat sunt ut vel velit?</p>
+    <p><b>关键词</b>: Bram Cohen, BitTorrent protocol, BitTorrent client, "BitTorrent, Inc.", µTorrent.</p>
+
+    <h2>BitTorrent 协议 / 客户端</h2>
+    <p>2001年4月，美国的程序员Bram Cohen设计了BitTorrent协议。然后在2001年7月2日，他发布了第一个的BitTorrent的可执行版本。现在是由布莱姆·科恩的公司（BitTorrent的公司）保持维护。<a data-c="wikipedia-bittorrent"></a></p>
+
+    <h2>μTorrent</h2>
+    <p>2005年9月18日，μTorrent发布，它是一个非常强悍的软件，正因为它的强悍，2006年12月7日被BitTorrent, Inc.收购。2007年9月18日，BitTorrent 6.0 was released. Although previous versions of the BitTorrent client had been open source software, with version 6 it became closed. <a data-c="wikipedia-utorrent"></a>，根据zhihu，v2ex网友的讨论 <a data-c="zhihu-bittorrent"></a><a data-c="v2ex-bittorrent"></a>，我猜测是这样，虽然BitTorrent设计了BitTorrent协议而且开发了第一款支持该协议的软件BitTorrent，但是人家μTorrent一经发布，就强大的无敌，所以把人家收购了，用了人家的代码，发现人家的代码太屌了，就干脆用了人家的代码，然后这么牛逼的代码，不能开源，干脆闭源之。</p>
+
+    <h2>中国网友的选择</h2>
+    <p>根据v2ex网友的看来 <a data-c="v2ex-bittorrent"></a>，用qBitTorrent，Transmission，迅雷这三者的比较多了。</p>
+
+    <!-- 引用库 -->
+    <div id="treasury-of-cites">
+        <span id="wikipedia-bittorrent"><a href="https://zh.wikipedia.org/wiki/BitTorrent_(%E8%BD%AF%E4%BB%B6)">https://zh.wikipedia.org/wiki/BitTorrent_(软件)</a></span>
+        <span id="wikipedia-utorrent"><a href="https://en.wikipedia.org/wiki/%CE%9CTorrent#Ownership_change">https://en.wikipedia.org/wiki/ΜTorrent#Ownership_change</a></span>
+        <span id="zhihu-bittorrent"><a href="https://www.zhihu.com/question/20187638">https://www.zhihu.com/question/20187638</a></span>
+        <span id="v2ex-bittorrent"><a href="https://www.v2ex.com/t/252494">https://www.v2ex.com/t/252494</a></span>
+    </div>
+
+    <!-- 描述库 -->
+    <div id="treasury-of-descriptions">
+        <div id="Romani">罗姆语：Romani，又称吉卜赛语或茨冈语</div>
+        <div id="Walon">瓦隆语（Walon）（中文或译瓦龙语、华隆语）属印欧语系罗曼语族的语言，是比利时境内的主要语言之一。</div>
+        <div id="stage-name">stage name</div>
+    </div>
+
+    <!-- 其他库 -->
+    <div id="treasury-of-story">
+        <div id="foo">foo is foo</div>
+    </div>
+</body>
+</html>
